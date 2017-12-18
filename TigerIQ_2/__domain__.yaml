@@ -3,10 +3,10 @@ object_type: domain
 version: 1.0
 object:
   attributes:
-    name: TigerIQ
+    name: TigerIQ_2
     description: 
     display_name: 
-    priority: 2
+    priority: 10
     enabled: true
     tenant_id: 1
     source: user

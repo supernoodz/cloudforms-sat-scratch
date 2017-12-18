@@ -4,9 +4,9 @@ version: 1.0
 object:
   attributes:
     display_name: 
-    name: display_status
+    name: change_request_servers
     inherits: 
     description: 
   fields:
   - method1:
-      value: display_status
+      value: change_request_servers
