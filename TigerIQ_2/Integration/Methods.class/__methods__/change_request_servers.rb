@@ -17,11 +17,12 @@ def fetch_list_data
     if vm
       $evm.log(:info, "VM tags: #{vm.tags}")
 
-      if vm.tagged_with?(group_filter['category'], group_filter['tag'])
+      if vm.tagged_with?(filter['category'], filter['tag'])
         server_list = "#{server_list},#{vm.name}"
       end
     else
-      $evm.log(:info, "Server not found in VMDB")
+      $evm.log(:info, "NO ACCESS: #{server}")
+      server_list = "#{server_list},#{vm.name}(NO ACCESS)"
     end
   end
 
