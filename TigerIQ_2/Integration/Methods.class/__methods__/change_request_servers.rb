@@ -22,7 +22,7 @@ def fetch_list_data
       end
     else
       $evm.log(:info, "NO ACCESS: #{server}")
-      server_list = "#{server_list},#{vm.name}(NO ACCESS)"
+      server_list = "#{server_list},#{server}(NO ACCESS)"
     end
   end
 
